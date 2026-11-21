@@ -5,18 +5,18 @@
 ![Frontend](https://img.shields.io/badge/React-Vite-141418?style=flat-square&color=141418&labelColor=26262E)
 ![License](https://img.shields.io/badge/License-MIT-141418?style=flat-square&color=141418&labelColor=26262E)
 
-Zero-MP3 procedural Lo-Fi hip-hop & vinyl crackle synthesizer built purely with the browser Web Audio API + a reactive 60fps HTML5 `<canvas>` oscilloscope visualizer.
+Zero MP3 LoFi music and vinyl crackle generator built purely with the browser Web Audio API.
 
-Wrote this because streaming 50MB background playlists while debugging code on flaky Wi-Fi felt silly when `AudioContext` can synthesize warm 7th chords, tape flutter, sub-bass, and dusty vinyl pops in ~200 lines of JS. Zero `.mp3` or `.wav` files anywhere in the repo.
+Streaming 50MB playlists on slow WiFi while debugging code felt silly. This tiny synth makes warm chords, sub bass, and dusty vinyl pops straight from math and 3am adrak chai. Zero `.mp3` or `.wav` files exist in this repo. It is not a missing folder bhai, it is pure browser math.
 
 ![lofi-music-generator preview](./assets/preview.svg)
 
-## What this thing actually does
+## What it does
 
-- **100% procedural Web Audio graph**: Blends sine + triangle oscillators with random cent detuning (`[-4.5, +4.5]` cents) for analog tape wow/flutter, routed through a warm resonant biquad lowpass filter (`950 Hz`, `Q = 1.2`).
-- **Real-time vinyl dust & tape hiss**: Generates a 2-second looping `AudioBuffer` filled with soft white-noise hiss and stochastic vinyl crackle spikes passed through a `1400 Hz` bandpass filter.
-- **4 built-in jazz/pentatonic progressions**: Switch live between `Midnight Study` (`Dm7 -> G7 -> Cmaj7 -> Am7`), `Rainy Balcony`, `Warm Tape 98`, and `3AM Chai Loop`, with sliders for lowpass cutoff, crackle density, BPM, and master gain.
-- **Reactive `<canvas>` wave contour**: Taps an `AnalyserNode` (`getByteTimeDomainData`) to draw live waveforms over subtle obsidian glass contours.
+- Plays endless mellow jazz chords in your browser with zero audio files.
+- Synthesizes warm vinyl dust pops and soft tape hiss in real time.
+- Lets you slide tempo, tape warmth filter, crackle amount, and volume live.
+- Draws a smooth 60fps wave on `<canvas>` from the live audio output.
 
 ## Run it in 60 seconds
 
@@ -27,23 +27,23 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173`, click **Start Synth**, and tweak the lowpass filter or crackle slider live.
+Open `http://localhost:5173` and click **Start Synth**.
 
-Run the DSP & chord voicing unit tests:
+Run unit tests anytime:
 
 ```bash
 npm test
 ```
 
-## Where to edit stuff
+## Which file to edit
 
-| File | What lives here |
+| File | What to change here |
 | :--- | :--- |
-| `src/services/ambientLoFiEngine.js` | `AmbientLoFiEngine` class, `CHORD_PRESETS` Hz tables, envelope scheduling, and vinyl buffer synthesis |
-| `src/components/LiquidContourBackground.jsx` | 60fps `<canvas>` live oscilloscope + SVG contour backdrop |
-| `src/components/AudioPlayer.jsx` | Persistent monochrome transport deck (Start/Stop, Mute, Next Loop) |
-| `src/App.jsx` | Standalone synth studio page with live filter, crackle, BPM, and gain sliders |
-| `test/engine.test.js` | Node unit tests for chord voicings, PCM crackle bounds, and synth state transitions |
+| `src/services/ambientLoFiEngine.js` | Edit chord notes, BPM presets, filter warmth, and vinyl crackle math |
+| `src/components/LiquidContourBackground.jsx` | Edit the live 60fps `<canvas>` wave visualizer |
+| `src/components/AudioPlayer.jsx` | Edit the bottom play, stop, and mute bar |
+| `src/App.jsx` | Edit preset buttons and live sliders |
+| `test/engine.test.js` | Edit synth unit tests |
 
 ## License
 
