@@ -1,0 +1,32 @@
+{
+  "name": "lofi-music-generator",
+  "version": "1.0.0",
+  "description": "Zero-MP3 procedural Lo-Fi hip-hop and vinyl crackle synthesizer built purely with browser Web Audio API and reactive canvas visualizer",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "webaudio",
+    "lofi",
+    "synthesizer",
+    "procedural-audio",
+    "canvas-visualizer",
+    "react",
+    "vite"
+  ],
+  "author": "LevCodeLab",
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
