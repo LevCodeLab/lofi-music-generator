@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450" fill="none">
+  <rect width="900" height="450" rx="16" fill="#0B0B0E"/>
+  <rect x="20" y="20" width="860" height="410" rx="12" fill="#141418" stroke="#26262E" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="46" y="58" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700">lofi-music-generator</text>
+  <rect x="652" y="38" width="202" height="28" rx="14" fill="#141418" stroke="#26262E"/>
+  <text x="669" y="56" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5">ZERO-MP3 WEB AUDIO SYNTH</text>
+
+  <!-- Preset Pills -->
+  <rect x="46" y="80" width="124" height="32" rx="8" fill="#FFFFFF"/>
+  <text x="65" y="100" fill="#000000" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Midnight Study</text>
+
+  <rect x="180" y="80" width="122" height="32" rx="8" fill="#141418" stroke="#26262E"/>
+  <text x="200" y="100" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="12">Rainy Balcony</text>
+
+  <rect x="312" y="80" width="122" height="32" rx="8" fill="#141418" stroke="#26262E"/>
+  <text x="331" y="100" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="12">Warm Tape 98</text>
+
+  <rect x="444" y="80" width="122" height="32" rx="8" fill="#141418" stroke="#26262E"/>
+  <text x="464" y="100" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="12">3AM Chai Loop</text>
+
+  <!-- Canvas Oscilloscope Frame -->
+  <rect x="46" y="126" width="808" height="136" rx="10" fill="#0B0B0E" stroke="#26262E"/>
+  <circle cx="620" cy="194" r="110" stroke="#26262E" stroke-width="1" stroke-dasharray="16 10 120 18"/>
+  <path d="M 60 194 Q 115 148, 170 194 T 280 194 T 390 194 T 500 194 T 610 194 T 720 194 T 836 194" stroke="#52525B" stroke-width="1.2" fill="none"/>
+  <path d="M 60 194 C 102 136, 140 252, 188 194 C 236 136, 274 252, 322 194 C 370 136, 408 252, 456 194 C 504 136, 542 252, 590 194 C 638 136, 676 252, 724 194 C 772 146, 804 236, 836 194" stroke="#FFFFFF" stroke-width="2.2" fill="none"/>
+
+  <!-- 4-Step Chord Voicing Strip -->
+  <rect x="46" y="276" width="194" height="38" rx="8" fill="#FFFFFF"/>
+  <text x="128" y="300" fill="#000000" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">Dm7</text>
+
+  <rect x="250" y="276" width="195" height="38" rx="8" fill="#0B0B0E" stroke="#26262E"/>
+  <text x="338" y="300" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">G7</text>
+
+  <rect x="455" y="276" width="195" height="38" rx="8" fill="#0B0B0E" stroke="#26262E"/>
+  <text x="532" y="300" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">Cmaj7</text>
+
+  <rect x="660" y="276" width="194" height="38" rx="8" fill="#0B0B0E" stroke="#26262E"/>
+  <text x="742" y="300" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">Am7</text>
+
+  <!-- Bottom Persistent Synth Deck -->
+  <rect x="46" y="330" width="808" height="74" rx="10" fill="#0B0B0E" stroke="#26262E"/>
+  <rect x="66" y="350" width="76" height="22" rx="11" fill="#141418" stroke="#26262E"/>
+  <text x="77" y="365" fill="#E4E4E7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5">SYNTH LIVE</text>
+  <text x="152" y="366" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600">Midnight Study</text>
+  <text x="66" y="387" fill="#71717A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">Chord: Dm7  |  72 BPM  |  LPF 950 Hz  |  Vinyl Crackle 40%</text>
+
+  <rect x="606" y="349" width="104" height="36" rx="8" fill="#141418" stroke="#26262E"/>
+  <text x="628" y="371" fill="#E4E4E7" font-family="system-ui, -apple-system, sans-serif" font-size="12">Next Loop</text>
+
+  <rect x="720" y="349" width="114" height="36" rx="8" fill="#FFFFFF"/>
+  <text x="746" y="371" fill="#000000" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600">Stop Synth</text>
+</svg>
